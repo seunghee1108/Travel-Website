@@ -6,6 +6,7 @@ const contentType = {
   'charset' : 'utf-8',
 }
 
+// 클릭했을때 넘어가는 것은 /send 이런식으로 작성하기
 const server = http.createServer((req, res) => {
   if(req.method === 'GET' && req.url === '/') {
     fs.readFile('./Travel-Website.html' ,(err,data) => {
