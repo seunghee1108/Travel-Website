@@ -1,0 +1,134 @@
+/* html파일에 link 작성 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  /* 전체 페이지 스타일링 */
+  body {
+  font-family: Arial, sans-serif;
+  }
+
+  /* 헤더 스타일링 */
+  header {
+  color: black;
+  font-size: 2.5rem;
+  }
+  
+  header h1 {
+  padding: 10px;
+  }
+  
+  nav ul {
+  list-style: none;
+  background-color: lightblue;
+  /* text-align: center; */
+  font-size: 2rem;
+  }
+  
+  nav ul li {
+  display: inline;
+  margin-right: 30px;
+  }
+  
+  nav a {
+  text-decoration: none;
+  color: black;
+  }
+  
+  /* 마우스 올리면 색깔 바뀜 */
+  nav a:hover {
+  color: #0074d9;
+  }
+  
+  /* 서브 메뉴 스타일링 */
+  .sub-menu {
+  display: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  padding: 10px;
+  z-index: 1;
+  }
+  
+  .sub-menu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+  }
+  
+  /* 서브 메뉴 활성화 스타일 */
+  /* 마우스 올라갔을때 보이게 설정 */
+  li:hover .sub-menu {
+  display: block;
+  }
+  
+  /* 카테고리 선택 버튼 스타일링 */
+  #category {
+  margin: 20px 0;
+  }
+  
+  .category-button {
+  background-color: #0074d9;
+  color: white;
+  padding: 20px ;
+  margin: 10px;
+  cursor: pointer;
+  }
+  
+  .category-button:hover {
+  background-color: #0056b3;
+  }
+  
+  /* 컨테이너 스타일링 */
+  .container {
+  width: 80%;
+  margin: 0 auto;
+  }
+  
+  /* 푸터 스타일링 */
+  footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  }
+
+  .category-button + ul {
+  display: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  }
+  
+  .category-button + ul li {
+  display: block;
+  }
+  
+  /* 카테고리 버튼에 마우스를 올리면 하위 목록을 표시합니다. */
+  .category-button:hover + ul {
+  display: block;
+  }
+  
+  .slider-container {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  }
+  
+  .slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  img {
+  width: 100%;
+  height: auto;
+  }
+ 
+
+  
