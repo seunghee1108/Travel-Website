@@ -5,18 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel-Website</title>
   <link rel="stylesheet" href="main.css">
-
 </head>
 <body>
+  <header>
       <nav>
-        <ul>
-            <li><a href="#">지역별</a></li>
-            <li><a href="#">계절별</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-        </ul>
-    </nav>
-
-    
+          <div class="container">
+              <h1>Travel-Website</h1>
+              <ul>
+                  <li><a href="#">지역별</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">서울</a></li>
+                      <li><a href="#">대전</a></li>
+                      <li><a href="#">대구</a></li>
+                      <li><a href="#">부산</a></li>
+                  </li>
+              </ul>     
+                  <li><a href="#">계절별</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">봄</a></li>
+                      <li><a href="#">여름</a></li>
+                      <li><a href="#">가을</a></li>
+                      <li><a href="#">겨울</a></li>
+                  </li>
+              </ul>
+                  <!-- 다른 메뉴 항목 추가 -->
+          </div>
+      </nav>
+  </header>
+  <div class="slider-container">
+    <div class="slider">
+        <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="slider">
+        <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="slider">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
