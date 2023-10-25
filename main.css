@@ -1,5 +1,4 @@
 /* html파일에 link 작성 */
-
 * {
   margin: 0;
   padding: 0;
@@ -24,13 +23,15 @@
   nav ul {
   list-style: none;
   background-color: lightblue;
-  /* text-align: center; */
+  text-align: center;
   font-size: 2rem;
   }
   
   nav ul li {
-  display: inline;
-  margin-right: 30px;
+  /* display: inline; */
+  display: inline-block;
+  margin-right: 100px;
+  position: relative;
   }
   
   nav a {

@@ -18,6 +18,11 @@ const server = http.createServer((req, res) => {
       }
     })
   }
+  else if(req.method === 'GET' === req.url === '/'){
+    fs.readFile('./main.css') , (err,data) {
+      
+    }
+  }
 });
 server.listen(8080, function(){
   console.log('서버가 가동중입니다. 끄려면 Cstrl + c 를 누르세요');
