@@ -1,11 +1,16 @@
+// 슬라이드 제작
 const sliderContainer = document.querySelector('.slider-container');
 const sliders = document.querySelectorAll('.slider');
+// 전체 슬라이드 변수 선언
 const totalSlides = sliders.length;
 let currentIndex = 0;
 let timer; // 타이머 변수
 
 function showSlide(index) {
+  // 
+  // 0보다 작은 경우
 if (index < 0) {
+  //
 index = totalSlides - 1;
 } else if (index >= totalSlides) {
 index = 0;
