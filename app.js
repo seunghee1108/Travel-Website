@@ -9,6 +9,9 @@ const server = http.createServer((req, res) => {
   } else if (req.url === '/main.css') {
     const filePath = path.join(__dirname, 'main.css');
     sendFile(res, filePath, 'text/css');
+  } else if (req.url === '/script.js') {
+    const scriptPath = path.join(__dirname, 'script.js');
+    sendFile(res, scriptPath, 'text/javascript')
   } else if (req.url.startsWith('/image/')) {
     const imagePath = path.join(__dirname, req.url);
     sendFile(res, imagePath, 'image/jpeg');
