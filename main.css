@@ -1,4 +1,4 @@
-/* html파일에 link 작성 */
+/* html파일에 link 작성하기 */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@
   header h1 {
   padding: 10px;
   }
-  
+  /* 내비게이션바 */
   nav ul {
   list-style: none;
   background-color: lightblue;
@@ -35,8 +35,10 @@
   }
   /* 서울, 대전, 대구, 부산 */
   nav a {
+  
   text-decoration: none;
   color: black;
+ 
   }
   
   /* 마우스 올리면 색깔 바뀜 */
@@ -49,7 +51,7 @@
   display: none;
   background-color: #f2f2f2;
   position: absolute;
-  padding: 10px;
+  /* padding: 10px; */
   z-index: 1;
   }
   
@@ -66,6 +68,14 @@
   display: block;
   }
   /* 카테고리 버튼에 마우스를 올리면 하위 목록을 표시합니다. */
+  .sub-menu li {
+    display: block; /* 각 메뉴 항목을 수직으로 나열하도록 변경합니다. */
+  }
+  .sub-menu ul {
+    list-style: none; /* 기본 목록 스타일 제거 */
+    padding: 0; /* 목록 내부 패딩 제거 */
+  }
+  
   .category-button:hover + ul {
    display: block;
    }
