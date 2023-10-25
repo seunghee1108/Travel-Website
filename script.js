@@ -37,15 +37,15 @@ showSlide(currentIndex - 1);
 showSlide(currentIndex);
 
 // 이전 및 다음 버튼 이벤트 처리
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+// const prevBtn = document.getElementById('prevBtn');
+// const nextBtn = document.getElementById('nextBtn');
 
-prevBtn.addEventListener('click', () => {
-showSlide(currentIndex - 1);
-clearTimeout(timer); // 버튼 클릭 시 타이머 클리어
-});
+// prevBtn.addEventListener('click', () => {
+// showSlide(currentIndex - 1);
+// clearTimeout(timer); // 버튼 클릭 시 타이머 클리어
+// });
 
-nextBtn.addEventListener('click', () => {
-showSlide(currentIndex + 1);
-clearTimeout(timer); // 버튼 클릭 시 타이머 클리어
-});
+// nextBtn.addEventListener('click', () => {
+// showSlide(currentIndex + 1);
+// clearTimeout(timer); // 버튼 클릭 시 타이머 클리어
+// });
