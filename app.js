@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
     // 부산 페이지로 이동
     const busanFilePath = path.join(__dirname, 'region', 'busan.html');
     sendFile(res, busanFilePath, 'text/html');
-  } else if (req.url === '/sub.css') {
+  } else if (req.url === '/region/sub.css') {
     const cssPath = path.join(__dirname, 'region', 'sub.css')
     sendFile(res, cssPath, 'text/css');
   } else {
