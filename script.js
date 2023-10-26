@@ -7,7 +7,7 @@ const sliderContainer = document.querySelector('.slider-container');
 const sliders = document.querySelectorAll('.slider');
 // 슬라이드의 총 개수를 나타내는 변수 
 const totalSlides = sliders.length;
-// 현재 표시 중인 슬랄이드의 인덱스를 나타낸다. 초기값은 0임
+// 현재 표시 중인 슬라이드의 인덱스를 나타낸다. 초기값은 0임
 let currentIndex = 0;
 let timer; // 타이머 변수
 
@@ -52,3 +52,5 @@ function prevSlide() {
   // slide 함수에 현재 인덱스에서 1을 뺀 값을 전달한다.
 showSlide(currentIndex - 1);
 }
+
+
