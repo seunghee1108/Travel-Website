@@ -53,4 +53,4 @@ function prevSlide() {
 showSlide(currentIndex - 1);
 }
 
-
+showSlide(currentIndex);
