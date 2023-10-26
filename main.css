@@ -6,48 +6,46 @@
   }
 
   /* 전체 페이지 스타일링 */
-  body {
+body {
   font-family: Arial, sans-serif;
   }
 
   /* 헤더 스타일링 */
-  header {
+header {
   color: black;
   font-size: 2.5rem;
   }
   
-  header h1 {
+header h1 {
   padding: 10px;
   }
   /* 내비게이션바 */
-  nav ul {
+nav ul {
   list-style: none;
   background-color: lightblue;
   text-align: center;
   font-size: 2rem;
   }
   /* 카테고리 위치 조정하기 */
-  nav ul li {
+nav ul li {
   /* display: inline; */
   display: inline-block;
   margin-right: 100px;
   position: relative;
   }
   /* 서울, 대전, 대구, 부산 */
-  nav a {
-  
+nav a {
   text-decoration: none;
   color: black;
- 
   }
   
-  /* 마우스 올리면 색깔 바뀜 */
-  nav a:hover {
+/* 마우스 올리면 색깔 바뀜 */
+nav a:hover {
   color: #0074d9;
   }
   
   /* 서브 메뉴 스타일링 */
-  .sub-menu {
+.sub-menu {
   display: none;
   background-color: #f2f2f2;
   position: absolute;
@@ -55,7 +53,7 @@
   z-index: 1;
   }
   
-  .sub-menu a {
+.sub-menu a {
   display: block;
   color: #333;
   text-decoration: none;
@@ -64,35 +62,36 @@
   
   /* 서브 메뉴 활성화 스타일 */
   /* 마우스 올라갔을때 보이게 설정 */
-  li:hover .sub-menu {
+li:hover .sub-menu {
   display: block;
   }
   /* 카테고리 버튼에 마우스를 올리면 하위 목록을 표시합니다. */
-  .sub-menu li {
-    display: block; /* 각 메뉴 항목을 수직으로 나열하도록 변경합니다. */
+.sub-menu li {
+  width: 5vw;
+  display: block; /* 각 메뉴 항목을 수직으로 나열하도록 변경합니다. */
   }
-  .sub-menu ul {
-    list-style: none; /* 기본 목록 스타일 제거 */
-    padding: 0; /* 목록 내부 패딩 제거 */
+.sub-menu ul {
+  list-style: none; /* 기본 목록 스타일 제거 */
+  padding: 0; /* 목록 내부 패딩 제거 */
   }
   
-  .category-button:hover + ul {
+.category-button:hover + ul {
    display: block;
    }
     
-  .slider-container {
+.slider-container {
   position: relative;
   width: 80%;
   margin: 20px auto;
   overflow: hidden;
   }
     
-  .slider {
+.slider {
   display: flex;
   transition: transform 0.3s ease-in-out;
   }
     
-  img {
+img {
   width: 100%;
   height: auto;
  }
